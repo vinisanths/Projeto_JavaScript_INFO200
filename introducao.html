@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aprendendo JavaScript</h1>
+    <p id="soma"> </p>
+    <form>
+        <label for="pnome">Nome: </label><input type="text" id="pnome">
+    </form>
+    <button onclick="informarNome()"> Informar Nome</button>
+
+    <button type="button" onclick="somar()">Somar</button>
+    <script>
+        function somar(){
+            let n1 = Number(prompt("Digite o primeiro Numero: "));
+            let n2 = Number(prompt("Digite o segundo numero: "));
+            let total = n1 + n2;
+            document.getElementById("soma").innerHTML = total;
+        }
+        function informarNome(){
+            let nome = prompt("Digite seu nome: ")
+            document.getElementById("pnome").value = nome;
+        }
+    </script>
+</body>
+</html>
