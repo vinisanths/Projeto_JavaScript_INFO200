@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function calcular(){
+            const n1 = document.getElementById("n1").value;
+            const n2 = document.getElementById("n2").value;
+            const resultado = parseFloat(n1) + parseFloat(n2); 
+            document.getElementById("resultado").innerHTML = "Resultado: " + resultado
+        }
+    </script>
 </head>
 <body>
-    
+    <input type="number" id="n1">
+    <input type="number" id="n2">
+    <button onclick="calcular()">Calcular</button>
+    <p id="resultado"></p>
 </body>
 </html>
